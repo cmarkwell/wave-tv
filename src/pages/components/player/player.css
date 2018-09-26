@@ -46,7 +46,8 @@ h2{
   font-size:30px;
 }
 
-p{
+.channel{
   margin-left:5%;
-  margin-top:200px;
+  margin-top:70px;
+  position:absolute;
 }

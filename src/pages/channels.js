@@ -6,25 +6,26 @@ import firebase from "./firebase";
 import YouTube from 'react-youtube';
 import Header from "./components/header/header";
 import Player from "./components/player/player";
+import Channels from "./components/channels/channels";
 
 
 
 const BasicExample = () => (
 
-  
+
 
   <Router>
     <div>
     <Header/>
 
-      <Route exact path="/" component={Channels} />
+      <Route exact path="/" component={channelsWindow} />
       <Route path="/player" component={playerWindow} />
     </div>
   </Router>
 );
 
 
-const Channels = () => (
+const channelsWindow = () => (
   <div>
   <div className="news">
   <h2><mark>News</mark></h2>

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import "./App.css";
-import "./player.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import './channels.css';
 import firebase from "./firebase.js";
 import YouTube from 'react-youtube';
-import Header from './components/header/header';
 
 class App extends Component {
   constructor() {
@@ -50,27 +49,22 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Header />
-        <div className="container">
-        <h1><mark>News</mark></h1>
-          <section className="display-item">
-            <div className="wrapper">
-              <ul>
-                {this.state.News.map(item => {
-                  return (
-                    <li key={item.id}>
-                    <YouTube className="player" videoId= {item.videoid}/>
-                      <h2>{item.title}</h2>
-                      <p>video by: {item.channel}</p>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </section>
-        </div>
+      <div className="news">
+      <h2><mark>News</mark></h2>
+      <h3>Muller Investigation releases big news.</h3>
+      <h4>Publisher: CNN</h4>
+      <Link to="/player"><button className="watch">Watch</button></Link>
+      </div>
+
+      <div className="entertainment">
+      <h2><mark>Entertainment</mark></h2>
+      <h3>New Trailer released for Captain Marvel.</h3>
+      <h4>Publisher: Marvel Entertainment</h4>
+      <button className="watch">Watch</button>
+      </div>
       </div>
     );
   }
 }
+
 export default App;

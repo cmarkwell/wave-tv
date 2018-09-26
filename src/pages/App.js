@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import withFirebaseAuth from "react-auth-firebase";
 import firebase from "./firebase";
 import Channels from "./channels";
-import Test from "./test";
-import Player from "./player";
 import "./App.css";
 import Header from "./components/header/header";
 

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './player.css';
 import firebase from "./firebase.js";
 import YouTube from 'react-youtube';
@@ -49,6 +50,7 @@ class App extends Component {
     return (
       <div className="app">
         <div className="container">
+        <Link to="/"><button>Back</button></Link>
         <h1><mark>News</mark></h1>
           <section className="display-item">
             <div className="wrapper">
@@ -58,7 +60,7 @@ class App extends Component {
                     <li key={item.id}>
                     <YouTube className="player" videoId= {item.videoid}/>
                       <h2>{item.title}</h2>
-                      <p>video by: {item.channel}</p>
+                      <p class="channel">video by: {item.channel}</p>
                     </li>
                   );
                 })}
