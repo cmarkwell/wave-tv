@@ -1,0 +1,47 @@
+form{
+  margin-top:120px;
+  width:80%;
+  margin-left:10%;
+  margin-right:10%;
+}
+
+input{
+  border-width:5px;
+  border-color:black;
+  padding:20px;
+  margin:10px;
+  margin-left:10%;
+  width: 70%;
+  border-radius:20px;
+}
+
+.signin{
+  border-color:black;
+  border-width:5px;
+  padding:10px;
+  width: 150px;
+  border-radius: 20px;
+  background-color:black;
+  color:white;
+  font-size:15px;
+  margin-top:10px;
+  margin-left:14%;
+}
+
+.title{
+  font-size: 30px;
+  margin-left:35%;
+  margin-top:60px;
+}
+
+.Google{
+  background-color:#f44542;
+  padding:20px;
+  border:none;
+  border-radius:30px;
+  font-size:15px;
+  color:white;
+  width:300px;
+  margin-left: 26%;
+  margin-top: 100px;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "wave-tv",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "gatsby": "2.0.7",
+    "react": "^16.5.1",
+    "react-auth-firebase": "1.2.1",
+    "react-dom": "^16.5.1",
+    "react-player": "1.6.4",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "1.1.5",
+    "react-youtube": "7.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "guppy": {
+    "id": "wave-tv",
+    "name": "Wave TV",
+    "type": "create-react-app",
+    "icon": "./static/media/icon_gradient4.c5cddacd.png",
+    "color": "#4919b7",
+    "createdAt": 1537144267981
+  },
+  "devDependencies": {
+    "firebase": "^5.5.0"
+  }
+}

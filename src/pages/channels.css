@@ -1,0 +1,57 @@
+.news{
+  position: absolute;
+width: 40%;
+height: 300px;
+left:8%;
+top: 184px;
+
+border: 5px solid #000000;
+box-sizing: border-box;
+}
+
+.entertainment{
+  position: absolute;
+  width: 40%;
+  height: 300px;
+  left:52%;
+  top: 184px;
+  border: 5px solid #000000;
+  box-sizing: border-box;
+}
+
+mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+  background-color:#F7FFA1;
+}
+
+h2{
+  position:absolute;
+  margin-left:400px;
+  font-size:35px;
+}
+
+h3{
+  margin-top:90px;
+  margin-left:10px;
+}
+
+h4{
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+.watch{
+  width: 40%;
+  height:50px;
+  border-color:black;
+  border-width:2px;
+  margin-left:10px;
+  font-size:20px;
+}
+
+.watch:hover{
+  background-color:black;
+  color:white;
+}
