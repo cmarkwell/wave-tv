@@ -4,17 +4,30 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import withFirebaseAuth from "react-auth-firebase";
 import firebase from "./firebase";
 import YouTube from 'react-youtube';
-import Player from './components/player/player';
 import Header from "./components/header/header";
+
 
 
 const BasicExample = () => (
 
   <Router>
     <div>
-<Header/>
+    <Header/>
+      <ul>
+        <li>
+          <Link to="/">Channels</Link>
+        </li>
+        <li>
+          <Link to="/player">Player</Link>
+        </li>
+        <li>
+        </li>
+      </ul>
+
+      <hr />
+
       <Route exact path="/" component={Channels} />
-      <Route path="/playerWindow" component={playerWindow} />
+      <Route path="/player" component={Player} />
     </div>
   </Router>
 );
@@ -26,7 +39,7 @@ const Channels = () => (
   <h2><mark>News</mark></h2>
   <h3>Muller Investigation releases big news.</h3>
   <h4>Publisher: CNN</h4>
-  <Link to="/playerWindow"><button className="watch">Watch</button></Link>
+  <button className="watch">Watch</button>
   </div>
 
   <div className="entertainment">
@@ -38,7 +51,7 @@ const Channels = () => (
   </div>
 );
 
-const playerWindow = () => (
+const Player = () => (
   <div>
 <Player/>
   </div>
