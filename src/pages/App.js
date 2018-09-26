@@ -30,7 +30,7 @@ class App extends Component {
     } = this.props;
     const { email, password } = this.state;
     if (user) {
-      return <Channels user={user} error={error} signOut={signOut} />;
+      return <Test user={user} error={error} signOut={signOut} />;
     }
     return (
       <div>
