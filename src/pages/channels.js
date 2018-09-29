@@ -13,7 +13,6 @@ import Channels from "./components/channels/channels";
 const BasicExample = () => (
 
 
-
   <Router>
     <div>
     <Header/>

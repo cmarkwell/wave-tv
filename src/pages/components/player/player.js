@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './player.css';
 import firebase from "./firebase.js";
 import YouTube from 'react-youtube';
+import Back from './back.png';
 
 class App extends Component {
   constructor() {
+
     super();
     this.state = {
       currentItem: "",
@@ -47,6 +49,18 @@ class App extends Component {
     itemRef.remove();
   }
   render() {
+    const opts = {
+          height: '390',
+          width: '640',
+          playerVars: { // https://developers.google.com/youtube/player_parameters
+          autoplay: 1,
+          controls: 0,
+          showinfo: 0,
+          modestbranding: true,
+          showsearch:0,
+          rel:0
+          }
+        };
     return (
       <div className="app">
         <div className="container">
@@ -58,7 +72,7 @@ class App extends Component {
                 {this.state.News.map(item => {
                   return (
                     <li key={item.id}>
-                    <YouTube className="player" videoId= {item.videoid}/>
+                    <YouTube className="player" videoId= {item.videoid} opts={opts}/>
                       <h2>{item.title}</h2>
                       <p class="channel">video by: {item.channel}</p>
                     </li>

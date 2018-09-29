@@ -2,23 +2,10 @@
   text-align: center;
 }
 
-.App-header {
-  background-color:#F7FFA1;
-  height: 70px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 2em;
-  margin-top:10px;
-  margin-left:-0px;
-}
-
 
 h1{
   font-size: 50px;
-  margin-top:5px;
+  margin-top:-10px;
   margin-left: 42%;
   position:absolute;
 }
@@ -37,7 +24,7 @@ ul{
 
 .player{
   width:100%;
-  margin-top:100px;
+  margin-top:60px;
 }
 
 h2{
@@ -48,6 +35,6 @@ h2{
 
 .channel{
   margin-left:5%;
-  margin-top:70px;
+  margin-top:100px;
   position:absolute;
 }
