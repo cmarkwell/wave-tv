@@ -28,8 +28,8 @@ const channelsWindow = () => (
   <div>
   <div className="news">
   <h2><mark>News</mark></h2>
-  <h3>Muller Investigation releases big news.</h3>
-  <h4>Publisher: CNN</h4>
+  <h3>Jay Sekulow on the Kavanaugh Confirmation.</h3>
+  <h4>Publisher: Fox News</h4>
   <Link to="/player"><button className="watch">Watch</button></Link>
   </div>
 

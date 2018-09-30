@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <div className="app">
         <div className="container">
-        <Link to="/"><button>Back</button></Link>
+        <Link to="/"><img src={Back} className="backButton"/></Link>
         <h1><mark>News</mark></h1>
           <section className="display-item">
             <div className="wrapper">
