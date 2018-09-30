@@ -26,19 +26,7 @@ const BasicExample = () => (
 
 const channelsWindow = () => (
   <div>
-  <div className="news">
-  <h2><mark>News</mark></h2>
-  <h3>Jay Sekulow on the Kavanaugh Confirmation.</h3>
-  <h4>Publisher: Fox News</h4>
-  <Link to="/player"><button className="watch">Watch</button></Link>
-  </div>
-
-  <div className="entertainment">
-  <h2><mark>Entertainment</mark></h2>
-  <h3>New Trailer released for Captain Marvel.</h3>
-  <h4>Publisher: Marvel Entertainment</h4>
-  <button className="watch">Watch</button>
-  </div>
+<Channels/>
   </div>
 );
 
