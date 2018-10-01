@@ -15,8 +15,9 @@ box-sizing: border-box;
   height: 300px;
   left:52%;
   top: 184px;
-  border: 5px solid #000000;
+  border: 5px solid #7f7f7f;
   box-sizing: border-box;
+  background-color: #e0e0e0;
 }
 
 mark {

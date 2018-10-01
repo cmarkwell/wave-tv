@@ -74,10 +74,8 @@ class App extends Component {
                     </div>
 
                     <div className="entertainment">
-                    <h2><mark>Entertainment</mark></h2>
-                    <h3>New Trailer released for Captain Marvel.</h3>
-                    <h4>Publisher: Marvel Entertainment</h4>
-                    <button className="watch">Watch</button>
+                    <h2>Coming Soon</h2>
+                    <h3>Since these are the beginning stages of Wave TV, we only have one channel so far.</h3>
                     </div>
                     </li>
                   );
