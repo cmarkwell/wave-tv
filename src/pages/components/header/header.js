@@ -9,7 +9,6 @@ class App extends Component {
       <body>
         <header className="App-header">
         <img src={Logo} className="logo"/>
-          <h1 className="App-title">Wave TV</h1>
         </header>
       </body>
     );
