@@ -37,7 +37,6 @@ class App extends Component {
         <form onSubmit={e => e.preventDefault()}>
           <input
             type="text"
-            placeholder="Email"
             onChange={e =>
               this.setState({
                 email: e.target.value
@@ -48,7 +47,6 @@ class App extends Component {
           <br />
           <input
             type="password"
-            placeholder="Password"
             onChange={e => this.setState({ password: e.target.value })}
             value={password}
           />{" "}
